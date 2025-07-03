@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Conecta Goiana</title>
+  <link rel="stylesheet" href="style.css">
+  <img src="assets/logo-cidade-cortada.png" alt="Logo da Cidade">
+  <h1>Cidadão Conectado</h1>
+  <p>Ajude a melhorar nossa cidade</p>
+</head>
+<body>
+  <h1>Cidadão Conectado</h1>
+
+  <form id="reportForm">
+    <label for="categoria">Categoria do problema:</label>
+    <select id="categoria" required>
+      <option value="">Selecione</option>
+      <option value="Buraco">Buraco na rua</option>
+      <option value="Iluminação">Falta de iluminação</option>
+      <option value="Lixo">Acúmulo de lixo</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" required></textarea>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" required>
+
+    <label for="foto">Foto (opcional):</label>
+    <input type="file" id="foto" accept="image/*">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="listaProblemas"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
